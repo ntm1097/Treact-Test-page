@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui;
+    color: #243e63;
+}
+
+.purple {
+    color: #7342d6; 
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;  
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+     display: flex;
+     justify-content: space-between;
+     max-height: 100vh;
+     padding-top: 48px;
+}
+
+/* Navigation */
+
+#landing {
+ padding: 32px;
+}
+
+.nav__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 8px;
+    height: 100%vh;
+}
+
+.logo__img {
+    width: 100%;
+    max-width: 40px;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo--title {
+        font-size: 24px;
+    font-weight: 900;
+    margin-left: 12px;
+    letter-spacing: 0.6px;
+    padding-bottom: 2px;
+    font-family: 'Inter', system-ui;
+    color: #243e63;
+}
+
+.nav__links {
+    display: flex;
+    width: 100%;
+    max-width: 624px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0, 0, 0, 24px;
+    
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+.login {
+    padding-left: 34px;
+}
+
+.nav__link--primary {
+   margin: 12px;
+   background-color: rgb(100, 21, 255);
+   color: white;
+   padding: 10px 32px;
+   border-radius: 24px;
+}
+
+/* Header */
+
+.header__row {
+    display: flex;
+}
+
+.header__description {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.header__customers {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    height: 32px;
+
+}
+
+.header__img--wrapper {
+    padding-bottom: 150px;
+}
+
+.header__img {
+    
+    width: 100%;
+    max-width: 750px;
+    height: 80vh;
+}
+
+.header__title {
+    color:#1a202c;
+    margin-top: 24px;
+    line-height: 1.25;
+}
+
+.header__description--para {
+    width: 100%;
+    max-width: 600px;
+    
+    
+}
