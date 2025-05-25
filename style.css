@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 
 * {
     padding: 0;
@@ -29,6 +30,7 @@ section {
     height: 80vh;
     
 }
+
 
 .img {
     z-index: 1;
@@ -101,17 +103,13 @@ p {
     text-align: center;
 }
 
-
-h2 {
-    font-size: 24px;
-}
-
 ul {
     list-style: none;
 }
 
 .container {
     padding: 96px 0 0 0;
+    margin: 0 auto;
 }
 
 /* Navigation */
@@ -206,6 +204,18 @@ ul {
     background-color: rgba(80,17,204);
 }
 
+/* Hamburer Menu  not ready */ 
+
+.hamburger__menu {
+    display: none;
+}
+
+.modal {
+    display: none;
+}
+
+
+
 /* Header */
 
 .header__row {
@@ -265,7 +275,7 @@ ul {
 .header__email--input {
     width: 100%;
     border-radius: 500px;
-    border: 2px solid #a0aec0;
+    border: 2px solid  rgb(229, 231, 235);
     color: #1a202c;
     opacity: 0.7;
     font-size: 16px;
@@ -277,7 +287,7 @@ ul {
 }
 
 .header__email--input:hover {
-    border-color: 
+    border-color:  rgba(160,174,192);
 }
 .header__email--btn {
     width: 160px;
@@ -703,7 +713,8 @@ header {
 }
 
 .plan__feature {
-    margin: 20px 0 0;
+    margin: 16px 0 0;
+    font-size: 16px;
 }
 
 .plan__button {
@@ -1160,3 +1171,89 @@ footer {
     opacity: 0.5;
 }
 
+/* Small Phones, Large Phones, tablets. */
+
+@media (max-width: 1074px){
+
+ .nav__links {
+    display: none;
+  }
+
+  .hamburger__menu {
+    display: block;
+  }
+
+    .container {
+        width: 100%;
+    }
+  .row {
+    flex-direction: column;
+  }
+
+  .header__description {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin: -114px
+  }
+  .header__title {
+    font-size: 36px;
+  }
+
+  .header__description--para {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  .header__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__img {
+    padding-left: 12px;
+  }
+
+  .header__email {
+    margin: 0 auto;
+  }
+
+  .header__customers {
+   padding: 0 0 0 0;
+   margin: 0 auto;
+   max-width: 400px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .feature {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+    .header__title {
+    font-size: 28px;
+  }
+
+  .header__description--para {
+    font-size: 16px;
+  }
+
+   .header__email {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .header__email--btn {
+    position: absolute;
+    top: 85px;
+    width: 100%;
+  }
+
+
+}
