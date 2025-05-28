@@ -214,7 +214,17 @@ ul {
     position: absolute;
     left: 800px;
     top: 36px;
+    transition: all 150ms;
     
+}
+
+.btn__menu:hover {
+    
+    filter: brightness(2);
+}
+
+.btn__menu:after {
+    filter: brightness(0)
 }
 
 .menu__backdrop {
@@ -1256,21 +1266,18 @@ footer {
     flex-direction: row;
   }
 
-  .nav__container {
-    display: flex;
-    justify-content: flex-end;
-  }
-
       .nav__links {
         display: none;
     }
     .btn__menu {
         display: block;
+        position: sticky;
+        right: 0;
+        top: 0;
     }
 
   
   .nav__container {
-    flex-direction: column;
     align-items: flex-start;
   }
 
